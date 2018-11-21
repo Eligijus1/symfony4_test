@@ -12,3 +12,14 @@ require('../css/app.css');
 // var $ = require('jquery');
 
 console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
+
+// loads the jquery package from node_modules
+let $ = require('jquery');
+
+// import the function from greet.js (the .js extension is optional)
+// ./ (or ../) means to look for a local file
+let greet = require('./greet');
+
+$(document).ready(function () {
+    $('body').prepend('<h1>' + greet('jill') + '</h1>');
+});
