@@ -13,6 +13,11 @@ console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
 // loads the jquery package from node_modules
 import $ from 'jquery';
 
+// Importing bootstrap global:
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
+//@import "~bootstrap/scss/bootstrap";
+
 // import the function from greet.js (the .js extension is optional)
 // ./ (or ../) means to look for a local file
 import greet from './greet';
